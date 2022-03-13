@@ -24,10 +24,6 @@ import SpecialistAddScreen from '../screen/BarberSide/SpecialistAddScreen';
 import AppointmentScreen from '../screen/BarberSide/AppointmentScreen';
 import AppointmentDetailScreen from '../screen/BarberSide/AppoinmentDetailScreen';
 import GalleryScreen from '../screen/BarberSide/GalleryScreen';
-// import WelcomeScreen from '../screen/BarberSide/WelcomeScreen';
-// import LoginScreen from '../screen/BarberSide/LoginScreen';
-// import RegisterScreen from '../screen/BarberSide/RegisterScreen';
-// import Chat from '../screen/chat/Chat';
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -39,8 +35,6 @@ export default class BarberStack extends Component {
 				name="Services List"
 				component={ServicesListScreen}
 				options={{
-					// headerStyle: { backgroundColor: colors.red },
-					// headerTintColor: 'white',
 					headerShown: false,
 				}}
 			/>
@@ -85,8 +79,6 @@ export default class BarberStack extends Component {
 				name="Packages List"
 				component={PackagesListScreen}
 				options={{
-					// headerStyle: { backgroundColor: colors.red },
-					// headerTintColor: 'white',
 					headerShown: false,
 				}}
 			/>
@@ -123,8 +115,6 @@ export default class BarberStack extends Component {
 				name="Specialists"
 				component={SpecialistScreen}
 				options={{
-					// headerStyle: { backgroundColor: colors.red },
-					// headerTintColor: 'white',
 					headerShown: false,
 				}}
 			/>
@@ -161,8 +151,6 @@ export default class BarberStack extends Component {
 				name="Appointment"
 				component={AppointmentScreen}
 				options={{
-					// headerStyle: { backgroundColor: colors.red },
-					// headerTintColor: 'white',
 					headerShown: false,
 				}}
 			/>
@@ -176,19 +164,6 @@ export default class BarberStack extends Component {
 			/>
 		</Stack.Navigator>
 	);
-
-	// createChatStack = () => (
-	//   <Stack.Navigator>
-	//     <Stack.Screen
-	//       name="Chat"
-	//       component={Chat}
-	//       options={{
-	//         headerStyle: {backgroundColor: colors.red},
-	//         headerTintColor: 'white',
-	//       }}
-	//     />
-	//   </Stack.Navigator>
-	// );
 
 	render() {
 		return (
@@ -206,8 +181,6 @@ export default class BarberStack extends Component {
 					name="Appointments"
 					children={this.createAppointmentStack}
 				/>
-				{/* <Drawer.Screen name="Chat" children={this.createChatStack} /> */}
-				{/* <Drawer.Screen name="Logout" component={AuthStack} /> */}
 			</Drawer.Navigator>
 		);
 	}

@@ -10,11 +10,6 @@ import {
 import colors from '../styles/colors';
 
 function Card({ title, subTitle, time, status, image, onPress }) {
-	// const getStatus = (status) => {
-	// 	if (status === 'Completed') return false;
-	// 	return true;
-	// };
-
 	return (
 		<TouchableHighlight
 			style={styles.screen}
@@ -51,7 +46,6 @@ const styles = StyleSheet.create({
 	},
 	screen: {
 		flex: 1,
-		// backgroundColor: colors.red,
 		paddingVertical: 8,
 		paddingHorizontal: 15,
 	},
@@ -61,8 +55,6 @@ const styles = StyleSheet.create({
 		backgroundColor: colors.white,
 		elevation: 10,
 		flexDirection: 'row',
-		// marginHorizontal: 5,
-		// marginTop: 20,
 		overflow: 'hidden',
 		shadowRadius: 20,
 	},
@@ -75,14 +67,12 @@ const styles = StyleSheet.create({
 		flex: 2,
 		alignItems: 'flex-start',
 		marginVertical: 10,
-		// backgroundColor: colors.red,
 	},
 	rightContainer: {
 		flex: 1,
 		alignItems: 'flex-end',
 		marginVertical: 10,
 		marginRight: 10,
-		// backgroundColor: colors.red,
 	},
 	image: {
 		width: 70,
